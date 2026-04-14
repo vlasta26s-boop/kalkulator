@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Allianz – Pojistné formuláře | Vlastimil Sáblík</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--az-blue:#003781;--az-pink:#E74A78;--az-gray:#6B7280;--az-teal:#F1F9FA;--radius:12px}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Open Sans',Arial,sans-serif;background:var(--az-teal);color:#1A1A1A;min-height:100vh}
+
+    header{background:#fff;border-bottom:1px solid #E5E7EB;padding:14px 24px;display:flex;flex-direction:column;align-items:center;gap:8px}
+    header img{height:40px}
+    header span{font-size:18px;font-weight:700;color:var(--az-blue);text-align:center}
+
+    main{max-width:960px;margin:0 auto;padding:52px 24px 60px}
+    h1{font-size:clamp(22px,3vw,34px);color:var(--az-blue);font-weight:700;text-align:center;margin-bottom:10px}
+    .sub{text-align:center;color:var(--az-gray);font-size:15px;margin-bottom:44px;max-width:600px;margin-left:auto;margin-right:auto}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+
+    .card{background:#fff;border-radius:var(--radius);box-shadow:0 4px 16px rgba(0,55,129,.10);padding:32px 24px 28px;text-decoration:none;color:inherit;transition:all .22s;display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px}
+    .card:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(0,55,129,.18)}
+    .card .ico{font-size:52px;line-height:1;margin-bottom:4px}
+    .card h2{font-size:19px;font-weight:700;color:var(--az-blue);line-height:1.2}
+    .card p{font-size:13px;color:var(--az-gray);line-height:1.55;flex:1}
+    .card .btn{margin-top:16px;padding:11px 28px;background:var(--az-blue);color:#fff;border-radius:8px;font-size:14px;font-weight:700;white-space:nowrap;transition:background .2s}
+    .card:hover .btn{background:#004A94}
+
+    footer{text-align:center;padding:30px 16px;font-size:12px;color:var(--az-gray);border-top:1px solid #E5E7EB;background:#fff;margin-top:40px}
+    footer a{color:var(--az-blue)}
+
+    @media(max-width:500px){
+      header span{font-size:14px}
+      .card{padding:24px 18px 22px}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="allianz_logo_modre.png" alt="Allianz pojišťovna">
+    <span>Vlastimil Sáblík – váš poradce Allianz pojišťovny</span>
+  </header>
+
+  <main>
+    <h1>Nezávazná kalkulace pojištění</h1>
+    <p class="sub">Vyberte produkt, o který máte zájem. Vyplnění trvá jen pár minut – kalkulace je zcela zdarma a nezávazná.</p>
+
+    <div class="grid">
+
+      <a class="card" href="autopojisteni.html">
+        <div class="ico">🚗</div>
+        <h2>Autopojištění vyladěné na míru</h2>
+        <p>Povinné ručení, havarijní pojištění nebo kompletní krytí pro vaše vozidlo.</p>
+        <div class="btn">Spočítat →</div>
+      </a>
+
+      <a class="card" href="urazove_pojisteni.html">
+        <div class="ico">🩺</div>
+        <h2>Úrazové pojištění</h2>
+        <p>Ochrana pro případ úrazu, invalidity nebo hospitalizace – pro vás i celou rodinu.</p>
+        <div class="btn">Spočítat →</div>
+      </a>
+
+      <a class="card" href="pojisteni_majetku.html">
+        <div class="ico">🏠</div>
+        <h2>Pojištění majetku</h2>
+        <p>Byt, dům nebo chata – pojistné krytí budovy i domácnosti v jedné smlouvě.</p>
+        <div class="btn">Spočítat →</div>
+      </a>
+
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Allianz pojišťovna, a.s. &nbsp;|&nbsp; Pojišťovací poradce: Vlastimil Sáblík
+    &nbsp;|&nbsp; <a href="tel:773240486">📞 773 240 486</a>
+    &nbsp;|&nbsp; <a href="mailto:vlastimil.sablik@iallianz.cz">vlastimil.sablik@iallianz.cz</a>
+  </footer>
+
+</body>
+</html>

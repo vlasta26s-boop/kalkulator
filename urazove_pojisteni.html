@@ -247,6 +247,78 @@
 
     footer{background:#fff;border-top:1px solid var(--az-gray-light);padding:24px;text-align:center;font-size:12px;color:var(--az-gray)}
     footer a{color:var(--az-blue)}
+
+    /* ===== MOBILNÍ OPTIMALIZACE ===== */
+    @media(max-width:640px){
+      /* Topbar – titulek pod logem, bez překrytí */
+      .topbar-inner{flex-wrap:wrap;padding:10px 14px;gap:4px;justify-content:center}
+      .topbar-title{position:static;transform:none;width:100%;text-align:center;font-size:13px;order:3;padding:2px 0;white-space:normal}
+      .topbar-nav{font-size:12px;gap:10px}
+      .logo img{height:32px}
+
+      /* Hero */
+      .hero{padding:18px 14px 10px}
+      .hero h1{font-size:clamp(18px,5vw,24px)}
+      .hero p{font-size:13px}
+
+      /* Wrap */
+      .wrap{padding:8px 10px 36px}
+
+      /* Karta */
+      .card{padding:14px 12px;border-radius:8px}
+
+      /* Stepper */
+      .stepper{margin:0 0 22px;padding:0 2px}
+      .step .circle{width:28px;height:28px;font-size:12px}
+      .step.done .circle::after{font-size:13px}
+      .stepper .line{top:14px}
+      .step .lbl{font-size:9px;margin-top:5px}
+
+      /* Nadpisy panelů */
+      .panel h2{font-size:17px}
+      .panel .sub{font-size:12px;margin-bottom:14px}
+      .section-title{font-size:13px;margin:16px 0 5px}
+
+      /* Mřížky karet */
+      .radio-grid,.radio-grid.three,.radio-grid.two{grid-template-columns:repeat(2,1fr);gap:8px}
+      .check-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+      .radio-grid[style*="repeat(4"]{grid-template-columns:repeat(2,1fr) !important}
+      .radio-grid[style*="repeat(3"]{grid-template-columns:repeat(2,1fr) !important}
+
+      /* Karta výběru */
+      .rcard .body{padding:10px 6px;min-height:74px;gap:5px}
+      .rcard .body .ico{font-size:20px}
+      .rcard .body .txt{font-size:11px}
+      .rcard .body .sub-txt{font-size:10px}
+      .ccard .body{padding:9px 5px;min-height:64px}
+      .ccard .body .ico{font-size:17px}
+      .ccard .body .txt{font-size:11px}
+
+      /* Balíčky */
+      .pkg-grid{grid-template-columns:1fr !important}
+      .pkg .body{padding:16px 12px 14px}
+
+      /* Slidery */
+      .slider-val{font-size:17px}
+
+      /* Tlačítka */
+      .actions{flex-direction:column;gap:10px;margin-top:18px}
+      .btn{width:100%;padding:13px 18px;font-size:14px}
+
+      /* Postranní panel – skryj */
+      .side{display:none}
+
+      /* Vstupní pole */
+      .field input[type=text],.field input[type=email],.field input[type=tel],.field select{font-size:16px}
+
+      /* Footer */
+      footer{padding:14px 12px;font-size:11px}
+    }
+    @media(max-width:380px){
+      .topbar-title{font-size:11px}
+      .radio-grid,.radio-grid.three{grid-template-columns:1fr}
+      .step .lbl{display:none}
+    }
   </style>
 </head>
 <body>

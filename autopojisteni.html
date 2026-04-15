@@ -511,8 +511,9 @@
           </div>
 
           <div class="field" id="f-spz">
-            <input type="text" id="spz" name="spz" placeholder=" " style="text-transform:uppercase">
-            <label for="spz">SPZ (volitelné)</label>
+            <input type="text" id="spz" name="spz" placeholder=" " style="text-transform:uppercase" maxlength="8">
+            <label for="spz">SPZ *</label>
+            <div class="err">Vyplňte prosím SPZ vozidla</div>
           </div>
 
           <div class="field" id="f-poznamka">
@@ -647,6 +648,7 @@
         {id:'f-prijmeni', check: v => v.length > 1},
         {id:'f-telefon', check: v => /^[\+]?[\d\s\-]{9,}$/.test(v)},
         {id:'f-email', check: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)},
+        {id:'f-spz', check: v => v.length >= 5},
       ];
       fields.forEach(f => {
         const wrap = document.getElementById(f.id);
